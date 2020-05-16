@@ -7,7 +7,7 @@ void decode(){
 	getline(cin, s);
 	bool ch = false;
 	for(int i = 0; i < s.size(); i++){
-		if(ispunct(s[i])){
+		if(ispunct(s[i]) || isdigit(s[i])){
 			ch = true;
 		}
 	}
